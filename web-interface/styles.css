@@ -1,0 +1,152 @@
+html {
+    font-size: 62.5%; 
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    background-image: url('img/pig-farm.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#logo-header {
+    align-items: left;
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.main-title {
+    text-align: center;
+    justify-content: center;
+    font-size: 7rem;
+    font-weight: bold; 
+    color: #2201f6;
+    background-color: #fff;
+    padding: 20px 100px;
+    border-radius: 60px;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    padding: 0 5rem;
+    margin: 20px 0px;
+    box-sizing: border-box;
+}
+
+.main-col {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #c7edff;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #5a51ff;
+}
+
+.nav-item button {
+    font-size: 2.2rem;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e4f6fe;
+}
+
+.nav-item button:hover {
+    background-color: #ff2f2f;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.nav-item button:active {
+    background-color: #ffb0b0;
+    color: #fff;
+}
+
+.info, .monitor, .device {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #62f5ff;
+}
+
+.info-text, .monitor-text {
+    margin: 10px 10px;
+    padding: 1rem;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-item, .monitor-item {
+    flex: 1 1 45%;
+    max-width: 30%;
+    font-size: 3rem;
+    margin: 10px 5%;
+    padding: 0px 10px;
+    border-radius: 20px;
+    background-color: #ddfaff;
+    box-sizing: border-box;
+}
+
+.info-text, .info-value, .monitor-text, .monitor-value {
+    background-color: #b1dff1;
+}
+
+.info-icon {
+    width: 25%;
+    height: 100px;    
+    object-fit: contain;
+    padding-right: 10px;
+}
+
+.icon-value {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.info-value {
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+    max-height: 100px;
+    width: 40%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 20%;
+}
+
+.up-down-icon {
+    width: 20%;
+    margin: 10px 0 10px 10px;
+}
+
+.max-min {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}

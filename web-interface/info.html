@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIÁM SÁT TRANG TRẠI HEO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/logo-web.png">
+</head>
+<body>
+    <div class="header">
+        <h1 class="main-title">GIÁM SÁT TRANG TRẠI HEO</h1>
+    </div>
+    <div class="container">
+        <div class="main-col">
+            <ul class="nav-list">
+                <li class="nav-item"><button onclick="func_home()">TRANG CHỦ</button></li>
+                <li class="nav-item"><button onclick="func_info()">THÔNG TIN</button></li>
+            </ul>
+            <div class="info">
+                <div class="info-item">
+                    <p class="info-text">Nhiệt độ:</p>
+                    <div class="icon-value">
+                        <img src="img/mid-temp.png" alt="temp icon" class="info-icon" id="temp-icon">
+                        <p class="info-value" id="temp-value">N/A</p>
+                        <img src="img/up.png" alt="temp up down" class="up-down-icon" id="temp-ud-icon">
+                    </div>
+                </div>
+                <div class="info-item">
+                    <p class="info-text">Độ ẩm:</p>
+                    <div class="icon-value">
+                        <img src="img/humi.png" alt="humi icon" class="info-icon" id="humi-icon">
+                        <p class="info-value" id="humi-value">N/A</p>
+                        <img src="img/up.png" alt="humi up down" class="up-down-icon" id="humi-ud-icon">
+                    </div>
+                </div>
+                <div class="info-item">
+                    <p class="info-text">TVOC:</p>
+                    <div class="icon-value">
+                        <img src="img/tvoc.png" alt="tvoc icon" class="info-icon" id="tvoc-icon">
+                        <p class="info-value" id="tvoc-value">N/A</p>
+                        <img src="img/up.png" alt="tvoc up down" class="up-down-icon" id="tvoc-ud-icon">
+                    </div>
+                </div>
+                <div class="info-item">
+                    <p class="info-text">Lượng khí CO2:</p>
+                    <div class="icon-value">
+                        <img src="img/co2.png" alt="co2 icon" class="info-icon" id="co2-icon">
+                        <p class="info-value" id="co2-value">N/A</p>
+                        <img src="img/up.png" alt="co2 up down" class="up-down-icon" id="co2-ud-icon">
+                    </div>
+                </div>
+                <div class="info-item">
+                    <p class="info-text">Nhiệt độ (Cao/Thấp/Trung bình):</p>
+                    <div class="icon-value">
+                        <img src="img/mid-temp.png" alt="temp icon" class="info-icon">
+                        <div class="max-min">
+                            <p class="info-value" id="temp-max">N/A</p>
+                            <p class="info-value" id="temp-min">N/A</p>
+                        </div>
+                        <p class="info-value" id="temp-avg">N/A</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <p class="info-text">Độ ẩm (Cao/Thấp/Trung bình):</p>
+                    <div class="icon-value">
+                        <img src="img/humi.png" alt="humi icon" class="info-icon">
+                        <div class="max-min">
+                            <p class="info-value" id="humi-max">N/A</p>
+                            <p class="info-value" id="humi-min">N/A</p>
+                        </div>
+                        <p class="info-value" id="humi-avg">N/A</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <p class="info-text">TVOC (Cao/Thấp/Trung bình):</p>
+                    <div class="icon-value">
+                        <img src="img/tvoc.png" alt="tvoc icon" class="info-icon">
+                        <div class="max-min">
+                            <p class="info-value" id="tvoc-max">N/A</p>
+                            <p class="info-value" id="tvoc-min">N/A</p>
+                        </div>
+                        <p class="info-value" id="tvoc-avg">N/A</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <p class="info-text">CO2 (Cao/Thấp/Trung bình):</p>
+                    <div class="icon-value">
+                        <img src="img/co2.png" alt="co2 icon" class="info-icon">
+                        <div class="max-min">
+                            <p class="info-value" id="co2-max">N/A</p>
+                            <p class="info-value" id="co2-min">N/A</p>
+                        </div>
+                        <p class="info-value" id="co2-avg">N/A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="info.js"></script>
+</body>
+</html>
